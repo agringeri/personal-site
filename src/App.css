@@ -1,0 +1,110 @@
+img {
+  vertical-align: top
+}
+
+p {
+  line-height: 1.5em;
+}
+
+li {
+  line-height: 1.5em;
+}
+
+.App {
+  text-align: center;
+}
+
+.TextBlock {
+  margin-left: calc(50vw - 250px);
+  margin-right: calc(50vw - 250px);
+  text-align: left;
+}
+
+.ImageBlock>img {
+  max-width: 500px;
+}
+
+.Screenshot>img {
+  max-height: 65vh;
+}
+
+.ExperienceBlock {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+/* small screens */
+@media screen and (max-width: 768px) {
+  .TextBlock {
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+
+  .ImageBlock>img {
+    max-width: none;
+    width: calc(100vw - 6em);
+  }
+}
+
+.ThemeDark {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.ThemeDark a:link {
+  color: white;
+}
+
+.ThemeDark a:visited {
+  color: lightblue;
+}
+
+.ThemeLight {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.ThemeLight a:link {
+  color: blue;
+}
+
+.ThemeLight a:visited {
+  color: purple;
+}
+
+.Header {
+  background-image: url("./images/me_1.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  text-shadow: 3px 3px 3px #000000;
+}
+
+.headerIcon {
+  filter:drop-shadow(3px 3px 3px #000000);
+  cursor: pointer;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-name: headerIcon;
+  animation-timing-function: ease;
+}
+@keyframes headerIcon {
+  0%   { transform: translateY(0); }
+  10%  { transform: translateY(10vh); }
+  20%  { transform: translateY(0); }
+  100% { transform: translateY(0); }
+}
